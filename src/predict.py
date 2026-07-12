@@ -9,9 +9,12 @@ MODEL_PATH = Path("models/best_flood_model.joblib")
 
 def load_model() -> dict:
     if not MODEL_PATH.exists():
-        raise FileNotFoundError(
-            "Model artifact not found. Run `python src/train_model.py` before starting the app."
-        )
+        # Deployment environments start from the committed source files and may
+        # not include a previously generated model artifact. Train it on demand
+        # so the prediction page remains usable after a fresh deployment.
+        from src.train_model import train
+
+        train()
     return joblib.load(MODEL_PATH)
 
 
