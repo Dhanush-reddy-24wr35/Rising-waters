@@ -5,5 +5,4 @@ venv/
 env/
 .env
 .ipynb_checkpoints/
-models/*.joblib
 models/model_report.txt
