@@ -56,3 +56,7 @@ Project Demonstration
 - Project Testing
 - Project Documentation
 - Project Demonstration
+#project output screenshots
+<img width="1246" height="712" alt="image" src="https://github.com/user-attachments/assets/c1983d54-a7b8-4a46-82a0-5b63028822ae" />
+<img width="1272" height="728" alt="Screenshot 2026-07-12 132327" src="https://github.com/user-attachments/assets/d233b54b-5ec0-4823-88c7-6f01cc00a737" />
+
